@@ -1,5 +1,4 @@
 - 👋 Hi, I’m Nazila Mathari @nazmathari1
-- 🌱 I’m currently learning Python
 - 💞️ I’m looking to collaborate on ideas and code
 - 📫 How to reach me at nazila.mathari@gmail.com
 
