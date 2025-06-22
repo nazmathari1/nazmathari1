@@ -1,0 +1,32 @@
+import requests
+from datetime import datetime
+
+# New York City coordinates
+latitude = 40.7128
+longitude = -74.0060
+
+# Choose the year you want data for (e.g., last year)
+year = 2024
+start_date = f"{year}-06-01"
+end_date = f"{year}-06-30"
+
+# Open-Meteo API endpoint
+url = (
+    "https://archive-api.open-meteo.com/v1/archive?"
+    f"latitude={latitude}&longitude={longitude}"
+    f"&start_date={start_date}&end_date={end_date}"
+    "&daily=temperature_2m_mean"
+    "&timezone=America/New_York"
+)
+
+response = requests.get(url)
+data = response.json()
+
+# Extract daily mean temperatures
+temps = data.get("daily", {}).get("temperature_2m_mean", [])
+
+if temps:
+    avg_temp = sum(temps) / len(temps)
+    print(f"Average temperature in New York for June {year}: {avg_temp:.2f}°C")
+else:
+    print("No temperature data available for the specified period.")
