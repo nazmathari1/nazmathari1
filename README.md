@@ -1,5 +1,5 @@
 - 👋 Hi, I’m Nazila Mathari @nazmathari1
-- 💞️ I’m looking to collaborate on ideas and code
+- 💞️ I’m looking to collaborate on ideas 
 - 📫 How to reach me at nazila.mathari@gmail.com
 
 <!---
